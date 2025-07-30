@@ -1,0 +1,4 @@
+Packages required:
+* geopy
+* requests
+* beautifulsoup4
