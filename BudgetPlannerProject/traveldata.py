@@ -54,8 +54,11 @@ def fetch_travel_cost(mode, source, destination, date, fuel_type='petrol'):
         )
     elif mode == 'bus':
         return distance / 2
-    else:
-        return distance  # Fallback for other modes
+    elif mode=='train':
+        return distance
+    elif mode== 'flight':
+        return distance*3
+
 
 def fetch_activity_cost(activities, location):
     if not activities or all(act.strip() == '0' for act in activities):
@@ -65,4 +68,4 @@ def fetch_activity_cost(activities, location):
         act.strip() for act in activities
         if act.strip() and act.strip() != '0'
     ]
-    return len(cleaned_activities) * 500
+    return len(cleaned_activities) * 750
