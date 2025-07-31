@@ -1,4 +1,4 @@
-AI BUDGET PLANNER
+**AI BUDGET PLANNER**
 
 ## 🧾 **Project Summary**
 
